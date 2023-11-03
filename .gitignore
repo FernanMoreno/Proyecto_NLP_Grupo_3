@@ -163,3 +163,7 @@ cython_debug/
 
 env_nlp
 .env
+
+#Datos
+.csv
+csv/
