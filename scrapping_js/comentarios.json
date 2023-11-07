@@ -1,0 +1,698 @@
+[
+  {
+    "link-video": "https://www.youtube.com/watch?v=tfitBsDTsR4",
+    "comentarios": [
+      {
+        "autor": "@ChrisJosJC",
+        "comentario": "Fazt, podrias hacer un curso más avanzado sobre Pocketbase?? Explicando la subida de archivo, su paquete NPM y como hacer un CRUD... Quizás con tecnologías como Astro"
+      },
+      {
+        "autor": "@mendez9104",
+        "comentario": "Me encanta VScode y voy a probar este editor cloud, Gracias por esta información!"
+      },
+      {
+        "autor": "@andermendz",
+        "comentario": "Lo mismo que codespaces literalmente, pero con un creador de presets que se demora media hora en generar plantilla de entornos de desarrollo.\n\nHonestamente, me gustaría que le incorporaran el lenguaje visual de Material You, lo haria lucir mucho más único en comparación con VScode ."
+      },
+      {
+        "autor": "@felipe25v52",
+        "comentario": "Hola fazt puedes hacer un login registro con django y react me serviria de mucha ayuda porfaaa"
+      },
+      {
+        "autor": "@edixonpina2755",
+        "comentario": "Yo soy de las personas que les gusta usar los programas de forma independiente para cada cosa, el editor para editar código, el navegador para navegar en internet, tal como dicta el \"principio de responsabilidad única\" en la programación, esta es la mejor forma de trabajar, así que este tipo de soluciones en la nube no me terminan de convencer, nada supera trabajar localmente en tu entorno 100% controlado y configurable.\n\nDe todas formas me encanta que Google se sume al tema de editores en la nube, la competencia siempre es buena ya que incentiva la innovación y al final los que terminan beneficiándose de esto somos nosotros los desarrolladores."
+      },
+      {
+        "autor": "@LeninElio",
+        "comentario": "Me dieron acceso hace unos dias, es un VS Code en la nube y facilita mucho desarrollar por como esta construido, por cierto si quieren usar su IA deben usan una VPN en EEUU."
+      },
+      {
+        "autor": "@tirielross",
+        "comentario": "Se ve muy bonito, ojalá salga pronto\n\nGracias fazt"
+      },
+      {
+        "autor": "@stndc8788",
+        "comentario": "Trabajo hasta con el bloc de notas... pero mi preferido es Sublime Text.\nUna pena que siempre se olviden de PHP, pero bueno...\nBuen video!!"
+      },
+      {
+        "autor": "@carlosdiazreyes9849",
+        "comentario": "Parece interesante pero solo para proyectos públicos, no me interesa en absoluto para proyectos privados, pues en el caso que lo permita, le estamos dando acceso a ese código y aunque te digan que \"no hacen nada por detrás\", la realidad es que no lo podemos saber con certeza y viniendo de google, 99% seguro que \"harán algo por detrás\"."
+      },
+      {
+        "autor": "@tonimacarroni5208",
+        "comentario": "Me preocupa que a futuro sea usado por las empresas para de la noche a la mañana quitarte todos los accesos al codigo que has escrito o que se use para monitorearte y hacer micromanaging"
+      },
+      {
+        "autor": "@jhonnieralexandercastrohin3782",
+        "comentario": "Se ve muy interesante el editor he probado Replit y también he probado cursor pero éste se ve muy chévere mi única pregunta es si va a necesitar también una muy buena conexión como replit"
+      },
+      {
+        "autor": "@joseantonioquentaramos8134",
+        "comentario": "Gracias Fazt. ... Es una tendencia, software y plataformas como servicios."
+      },
+      {
+        "autor": "@danyael031",
+        "comentario": "Caballero, muy buenos videos, como siempre, pero parece que tiene un detalle en el audio. El audio del video tiene las frecuencias bajas muy saturadas. Si lo escucho en el celular no hay problema, pero en las bocinas del escritorio me retumban los oídos. Y no, no tengo ninguna configuración para incrementar los bajos en mi equipo de escritorio."
+      },
+      {
+        "autor": "@pepernando2221",
+        "comentario": "pero luego empezaran a cobrar espacio, mensualidades o algo ahi si no se si valdría la pena veria como ventaja que peuedes acceder a cualquier computadora y el proyecto esta ahi, pero puedes lograrlo igualemente con git, en cuanto recursos no requieres casi nada para ejecutar proyectos web la mayoria de los casos, tal vez solo les convenga a los de flutter"
+      },
+      {
+        "autor": "@vparitorres",
+        "comentario": "Ya estoy en la IDX waitlist.. Gracias por el video"
+      },
+      {
+        "autor": "@droid-jr9940",
+        "comentario": "siempre me sorprendes !!! eres super good !!"
+      },
+      {
+        "autor": "@uwupaloma3387",
+        "comentario": "la gran pregunta es como van a monetizar esto, sera gratuito como google colabs? tiene pinta de que va a ser con tiers."
+      },
+      {
+        "autor": "@Jesusk19",
+        "comentario": "Si es con Python me interesa"
+      },
+      {
+        "autor": "@lainerdonet",
+        "comentario": "¿Cuánto tiempo estiman que va a estar project IDX? Recuerden: Google Play Music, Google podcast y Stadia. Deje aquí su estimado "
+      },
+      {
+        "autor": "@MarianoIbarra11",
+        "comentario": "Está bien, pero no va a pasar de ser una segunda opción para cuando estamos en trabajando desde otra pc, y conociendo a Google, en 2 años lo cancelan"
+      },
+      {
+        "autor": "@dhiele",
+        "comentario": "No va con el tema pero, ¿cual es el mejor hosting calidad precio para un principiante?"
+      },
+      {
+        "autor": "@yugiutpidat",
+        "comentario": "gracias Fazt, tiempre con las novedades !!!"
+      },
+      {
+        "autor": "@JosmanAltamira",
+        "comentario": "Siento que seria el competidor de codespaces de github"
+      },
+      {
+        "autor": "@StendhalGz",
+        "comentario": "a mi me dieron el acceso pero cuando creo un proyecto demora mucho en hacer el build enviroment"
+      },
+      {
+        "autor": "@raiselrodriguezcabrera8004",
+        "comentario": "Waitlist es lista de espera no lista blanca"
+      },
+      {
+        "autor": "@takahashinji5286",
+        "comentario": "Espanta lo mucho que demora el booting del entorno de desarrollo"
+      },
+      {
+        "autor": "@Zeioth",
+        "comentario": "It's so funny to me when people see vscode as a good code editor when it's just atom with a microsoft sticker."
+      },
+      {
+        "autor": "@merloali",
+        "comentario": "wao ese ide tarda un anio en encender a diferencia de mi NEOVIM con solo 50 milisegundos en cualquier lenguaje, caramba, aunq la ventaja estaria en mobile, pero no manches ya no trabajo en esa area, solo web y core"
+      },
+      {
+        "autor": "@inteligenciafutura",
+        "comentario": "si tu lo dices te creo"
+      },
+      {
+        "autor": "@npm_lucho",
+        "comentario": "Prefiero una app de escritorio, que sea web, no gusta."
+      },
+      {
+        "autor": "@agustingonzalez7641",
+        "comentario": "a mi me dieron el acceso pero con una cuenta hotmail, no se como conectarla a gmail aaaaaaaaa"
+      },
+      {
+        "autor": "@KhelinMagic",
+        "comentario": "VSCODE NO CORRE EN NUBE?"
+      },
+      {
+        "autor": "@silaspy-ff2ne",
+        "comentario": "Vim > else/* "
+      },
+      {
+        "autor": "@user-ys6dr1xc7s",
+        "comentario": "No me gusta que todo se ejecute vía web es lento, demasiado lento y así es el futuro. Luego meterán mas virtualización y mas capas y con un procesador con 10 núcleos ira lento. Cada vez que das a guardar tendrá que dar 3 vueltas al mundo vía web luego atravesar los contenedores y firewall escribir en disco y volver la respuesta. Que triste esta juventud, si fuera xmi todo iría c c++ puro"
+      }
+    ]
+  },
+  {
+    "link-video": "  https://www.youtube.com/watch?v=VqoQQu93qmQ",
+    "comentarios": [
+      {
+        "autor": "@naamanvilla",
+        "comentario": "Mi opinión:\n- Demasiado tarde para ir en contra de estos tracking, es imposible NO usar la tecnología de mensajería o de la nube y el precio a pagar es este trackeo, los anuncios, etc.\n- Podemos protegernos informándonos y tratar de no subir demasiado información personal porque en el futuro estoy seguro que nos va jugar en contra la falta de privacidad (Ej. para conseguir un trabajo te harán un full-scan completo de tus redes y por ahi pueden encontrar cosas que no les gusten a las empresas)"
+      },
+      {
+        "autor": "@jgtarin",
+        "comentario": "De poco sirve deshabilitar esa opción si a su vez utilizas Gmail, GDrive, Youtube, Android y sobre todo Apps de redes sociales. Todas y cada una de ellas están únicamente pensadas para recopilar toda la información posible del usuario"
+      },
+      {
+        "autor": "@albasky7502",
+        "comentario": "Hola;\nQuería preguntar tu opinión sobre los navegadores Tor Browser, Ecosia y Arc.\nIdem, sobre sus ventajas e inconvenientes respecto a Chrome.\nGracias"
+      },
+      {
+        "autor": "@ErickRickert",
+        "comentario": "En mi Android esas 3 opciones por defecto vienen desactivadas, tal vez con la última actualización del Google Chrome se avivaron y las desactivaron. Aún así, muchas gracias por este video para que más gente tome conciencia de como nos espían o nos sacan nuestros datos sin darnos cuenta"
+      },
+      {
+        "autor": "@user-mq2gb2uy7u",
+        "comentario": "7:50 Comienza el Tutorial. Termina en 9:28"
+      },
+      {
+        "autor": "@fer705THEREAL",
+        "comentario": "Vine del video de los adblocks de youtube y ahora vi este y creo que te mereces mi follow por lo bien y detallado que explicas todo. Sigue así Midulive."
+      },
+      {
+        "autor": "@dakkusu988",
+        "comentario": "A mi esta opción me salía ya desactivada por defecto, pero gracias por la info igualmente, también te digo, ya de por sí somos espiados diariamente por muchos otros sitios sin que nos demos cuenta, asi que esto no se hasta que punto iba a cambiarnos algo Xd"
+      },
+      {
+        "autor": "@cerm88",
+        "comentario": "Midu, Google te va a revocar el Google Developer Expert por este vídeo, jajaja"
+      },
+      {
+        "autor": "@zhackperuca1599",
+        "comentario": "Te faltó mencionar Wolf que es basado en firefox y cuenta con varias funciones de privacidad"
+      },
+      {
+        "autor": "@chemedev",
+        "comentario": "El problema es que yo tenía desactivadas las cookies de terceros y en algunas plataformas no me podía ni loggear con google o ver ciertas URL, por lo pronto espero que con esto no existan más"
+      },
+      {
+        "autor": "@fernandolor4187",
+        "comentario": "Yo uso edge ... y me ha parecido genial, los fondos de pantalla qué tiene, el uso de la inteligencia artificial, el drop para el envío de cualquier cosa hacia otros dispositivos ... esta a otro nivel"
+      },
+      {
+        "autor": "@juanpavezquijada8717",
+        "comentario": "Hace tiempo me preguntaban por que usaba Firefox en vez de Chrome y respondía cual era el motivo de hacermelo preferir por sobre otros, salvo su buen analizador de la DOM."
+      },
+      {
+        "autor": "@unsalvadorenodecorazon1709",
+        "comentario": "Brave y Firefox son navegadores excelentes y sobretodo tienen una gran privacidad"
+      },
+      {
+        "autor": "@miguel9221",
+        "comentario": "teniendo en cuenta que la mayoría de navegadores actuales se basan en chromium yo creo que poco a poco adoptaran esa tecnología espero que evolucione para bien"
+      },
+      {
+        "autor": "@msaracena",
+        "comentario": "Y usar directamente Chromium, no sería mejor que usar navegadores basados en él? En mi caso uso Firefox en la pc de escritorio y en la laptop, pero tengo una netbook con 1 giga de RAM DDR2 y Chromium se desenvuelve mejor que Firefox si quiero ver videos en YouTube. Saludos y muy bueno el video"
+      },
+      {
+        "autor": "@gerrcassytb",
+        "comentario": "Algo que tampoco me gusta de Edge es que cuando quieres cambiar de ventana (ctrl+tab), y habías navegado entre varias pestañas en Edge, en lugar de cambiar de ventana te abre la pestaña previa..  Es algo bastante molesto porque uno espera cambiar de ventana..."
+      },
+      {
+        "autor": "@FranciscoAntonio-rd1eu",
+        "comentario": "A mi lo que me parece Increíble de Chrome es que ya de partida no te actualiza más en Windows 7 ( pero si la versión Beta) que para mi era un Windows indestructible y que se reparaba una y otra vez y quedaba perfecto , pero hace un par de días ya no fue así, me fui a restaurar sistema y crear punto de inicio de restauración y nada , comenzaron las ventanillas de mensajes , haga ésto, o aquello y nada , y antes de todo eso Chrome metió unas tres veces la ventana de anuncio de efectuar las actualizaciones sobre malwares o softwuares mal intencionados  etc. a lo que yo simplemente me  pase por el traste. Me fui a un tutorial muy bueno de restaurar todos los windows desde cmd , el vídeo indica que durará la reparacion de windows unos 20 o un poco más de minutos, pero el mio tardo casi 3 horas. así de dañado estaba, pero al volver a Chrome , tenia todo borrado mis actividades que recupere con la  contraseñas , y eso me parece muy mal del abuso de autoridad de éstas empresas. O sea si no actualizas te echan a perder hasta tú versión de Windows ."
+      },
+      {
+        "autor": "@iamanderson",
+        "comentario": "El santo remedio es no usar chrome, ahí está brave, waterfox, etc. la tremenda noticia es la desaparición de cookies, eso representaría un tremendo refactor en muchos sistemas web"
+      },
+      {
+        "autor": "@user-nu2is2sx7e",
+        "comentario": "Esta es una de las razones por las que no pongo a Chrome como mi navegador by default, este navegador lo quiere todo, el problema es que es elitista, no deja que librerías abiertas se carguen entonces por eso uso hasta 5 navegadores entre ellos FireFox, Opera, Tor Browser, etc."
+      },
+      {
+        "autor": "@fernandoarias9462",
+        "comentario": "Excelente contenido, siempre aprendiendo cosas nuevas. "
+      },
+      {
+        "autor": "@lilvic7801",
+        "comentario": "A mi también me gusta más el Opera \"normal\" que el GX "
+      },
+      {
+        "autor": "@SSanchez15394",
+        "comentario": "He dejado recientemente de utilizar Chrome en mi MAC para utilizar Brave y estoy encantado la verdad. Utilizaba Chrome básicamente por sus Developer Tool y Safari para navegar y demás. Ahora me sucede que cuando utilizo Safari, a pesar de utilizar extensiones como Adblock o Adguard no consigo eliminar la publicidad a pesar de estar bien configurados (no uso ambos a la vez, simplemente he probado uno y no funciona y después de desinstalarlo he probado el otro y tampoco). ¿Hay alguna razón por la que en Safari estos bloqueadores de anuncios no funcionen del todo correctamente?. No estoy a disgusto con Brave, pero es que creo que se podría sacar bastante potencial a Safari a pesar de que hoy día se hace mucho más incapié en optimizar los sitios web en navegadores con Chromium"
+      },
+      {
+        "autor": "@rubenbupe",
+        "comentario": "Google debería estar obligada por ley a seguir estándares. Tiene demasiado poder como para dejar que hagan lo que quieran"
+      },
+      {
+        "autor": "@josiasjum6325",
+        "comentario": "Gracias Midu, tenía todo eso activado en el móvil pero no me gusta. Voy a tratar de enseñarle a otras personas tu video :)\nTkm Midugod"
+      },
+      {
+        "autor": "@code1866",
+        "comentario": "Desactivarlo no va a servir de nada. La web te va a seguir mostrando anuncios, solo que irrelevantes si lo tienes desactivado.\n\nEn mi opinión el tracking web lo veo útil a nivel empresarial. Una web sin Cookies es una web con malos productos y probablemente una mala experiencia de usuario.\n\nLa solución sería limitar el número de anuncios por web. Si no cumples SEO te podría penalizar. Sería una buena solución."
+      },
+      {
+        "autor": "@comunikte5000",
+        "comentario": "Yo uso Edge y me parece muy rápido y ágil me gusta "
+      },
+      {
+        "autor": "@JuanLinqui",
+        "comentario": "Quiza lo mejor sea utilizar Tor. Que piensas de Tor como navegador anonimo?"
+      },
+      {
+        "autor": "@Hjoaco",
+        "comentario": "En linux he notado que las apps capturan ciertos datos como los fingerprints de la maquina para identificar al usuario usando otros metodos, un ejekmplo esto lo hace android studio por medio de java usando un archivo xml"
+      },
+      {
+        "autor": "@jdfioretti",
+        "comentario": "Midu! Genial el consejo. Gracias. Me encanta Brave, lo uso hace un par de años y va de primera. Segunda opcion Firefox. El resto desinstalado. Ni hablar de edge, es IE disfrazado jeje. Abrazo!"
+      },
+      {
+        "autor": "@yupik4ye34",
+        "comentario": "lo tenia ya desactivado desde que lo instale pero gracias por el video hay que hacer circular la informacion  !!!"
+      },
+      {
+        "autor": "@LeandroHorus",
+        "comentario": "Opera GX es un excelente navegador con múltiples opciones antitracking y demás, lo recomiendo!"
+      },
+      {
+        "autor": "@echangf6416",
+        "comentario": "Que buen dato Midu se agredece bastante. No conozco esa página naranja que mencionas así que tendré que entrar para investigarla, después les comparto resultados de mi investigación"
+      },
+      {
+        "autor": "@xiosagikana28",
+        "comentario": "Menos mal que mi paranoia me hace rechazar todas las cookies y permisos, excepto los que te obligan a aceptar. Que el otro día me saltó en chrome el aviso que menciona y le puse que no, que se quedase como estaba; acabo de probar en la consola y me sale también denegado."
+      },
+      {
+        "autor": "@razielasc",
+        "comentario": "Hace mucho dejé de usar Chrome. Brave, opera, Firefox entre otros a la larga me terminaron funcionando mejor y con muchos menos problemas.\nIncluyendo Microsoft edge, cada vez un poco mejor este XD."
+      },
+      {
+        "autor": "@zorion-leviakant",
+        "comentario": "Yo uso Comodo Dragon porque es muy similar pero respeta más al usuario. Gracias por estos vídeos."
+      },
+      {
+        "autor": "@humber70",
+        "comentario": "buena infomidu, como siempre contenido de calidad "
+      },
+      {
+        "autor": "@ProgramasVBnet",
+        "comentario": "Yo utilizo Firefox, pero muchas veces para abrir ciertas cosas tienes que utilizar Chrome, tener abierto la página de Google y Youtube y luego cerrar y volver abrir Firefox para que te recargue la página que sino no se ven bien. Es algo curioso y no me ocurre solo en 1 ordenador sino en otros dos más que tengo y no se si es por tener el ablock puesto. Saludos"
+      },
+      {
+        "autor": "@alex_kev7",
+        "comentario": "Recomiendo usar Edge y Bing, van super bien con Windows"
+      },
+      {
+        "autor": "@escorbos",
+        "comentario": "Como usuario, genial! Como dueño de un sitio web que depende de adsense, espero que no baje el rendimiento de los anuncios xd"
+      },
+      {
+        "autor": "@PABLOMARCOSBELLIDO",
+        "comentario": "¿Conviene usar las herramientas de Google o recomiendas usar de Microsoft o las de código abierto?"
+      },
+      {
+        "autor": "@cirosoylomas",
+        "comentario": "Hola, yo uso Vivaldi y me va muy bien, lo uso tanto en pc como en el celu, hace mas de 5 años que uso este navegador, y jamas tuve un problema!!!"
+      },
+      {
+        "autor": "@Paul_MendozZa",
+        "comentario": "Desde que Chrome tenía planeado eliminar los bloqueadores de anuncios\nMe pase en todos mis dispositivos a Firefox y Brave\nEl Chrome lo elimino con el ADB(Android )y igual a Edge cuando vienen preinstalados"
+      },
+      {
+        "autor": "@Alejandrocd_",
+        "comentario": "Pregunta, esto se puede hacer desde edge? pregunto por que a lo mejor influye el que usemos el buscador de GOOGLE, no el NAVEGADOR."
+      },
+      {
+        "autor": "@CesarSolomon-kj1ip",
+        "comentario": "tienes bastante razón , por eso siempre e usado desde hace años opera tanto en Windows, android como en Apple y Firefox"
+      },
+      {
+        "autor": "@charonmoon1",
+        "comentario": "La gente no tiene ni idea, y además no son conscientes del peligro de estos detalles.\nY lo  peor, es que no quieren ni tienen interés en aprender.\nBuen vídeo."
+      },
+      {
+        "autor": "@user-qp6pi7rw3e",
+        "comentario": "Creo que por eso esta mejor mullvad browser para buscar cosas, nada mas para buscar ya que para logearte en otros lados, no te va funcionar a menos que estes dispuesto a iniciar sesion cada vez que entres al navegador"
+      },
+      {
+        "autor": "@ANGELRAULESPINOSAPICAZO",
+        "comentario": "Si de por sí no queremos que nuestros seres queridos no vean nuestro historial, ahora imagínense que una empresa lo vea a cada rato"
+      },
+      {
+        "autor": "@drackorojas7312",
+        "comentario": "Entre buscando intel del sandbox de google y sali descargando el mejor navegador del momento. que buen servicio. Like y sub"
+      },
+      {
+        "autor": "@Hjoaco",
+        "comentario": "Yo uso brave, lo descargo de su github entre las opcion release y uso tambien firefox con el archivo user.js editado por mi, ambos configurados para mayor rendimiento"
+      },
+      {
+        "autor": "@ivanmarvilla7143",
+        "comentario": "muchas gracias . Es como si hubiesen puesto como feo y malo el uso normal de las cookies , las que se han utilizado toda la vida para identificar a lo usuarios de los sitios web (y no me jodan que todos mis amigos se creen que lo que yo hago con las cookies en mis sitios es malo) y el uso de las para terceras cosas es lo normal .... mmmm \"·$%M%·$%  es que lo peor es que se creen . más cuando las que yo dejo solo van a saber de ellas el sitio web y ni eso si quisiera por que están codificadas y bit a bit"
+      },
+      {
+        "autor": "@Gaston979",
+        "comentario": "mil gracias...!!!\ncuando lo vi ya me imagine iba a traer problemas esa actualización de seguridad jeje\n\nsaludos desde buenos aires argentina"
+      },
+      {
+        "autor": "@DiegoGarcia-nr1gn",
+        "comentario": "Midu opera tiene un proxy en China que recaba tu info y se la manda al gobierno por ahora uso edge y si bien es más rebuscado podés cortarle toda la info qué se le envía a Microsoft, igual Microsoft si no te lo saca a nivel browser te lo saca a nivel windows... Y eso si que es complicado quitarlo porque tenés que instalar un Windows personalizado por terceros desconocidos qué te prometen la privacidad absoluta pero no dejan de ser terceros desconocidos..."
+      },
+      {
+        "autor": "@charlydak1ng",
+        "comentario": "menos mal que nunca necesite a Google Chrome jaja, se agradece la información!"
+      },
+      {
+        "autor": "@alvaro_city",
+        "comentario": "A la firme el hecho que me muestren anuncios sobre cosas que busco, para mi, es algo de bastante ayuda. Me sirve en la comparacioón de precios, en recordar tal vez cosas que estoy necesitando, etc. Ya estamos en el punto que somos dependientes de la tecnología, el trackeo está dentro de la naturalidad del internet, por lo menos para el mundo laboral xd"
+      },
+      {
+        "autor": "@NestorJoseGomez",
+        "comentario": "Hola. ¿qué extensión utilizas para hacer ese zoom (como una lupa) cuando quieres mostrar texto en detalle? ¿Alguno lo sabe?"
+      },
+      {
+        "autor": "@DocTrola",
+        "comentario": "Muy buen trabajo, gracias!"
+      },
+      {
+        "autor": "@jgvilca",
+        "comentario": "Años usando Firefox dev edition Solo chrome para pruebas y chromium"
+      },
+      {
+        "autor": "@AFalken",
+        "comentario": "Nada como Firefox para estar en paz con uno mismo y eliminar el karma "
+      },
+      {
+        "autor": "@LuisFernando-nm6lv",
+        "comentario": "Otra cosa que hizo Chrome es que al menos en Mac, agrego accesos directos a todos sus servicios al Launchpad, youtube, Gmail, Google Drive, Documentos, etc "
+      },
+      {
+        "autor": "@LuisOjisan",
+        "comentario": "Gracias....lo acabo de cambiar en Android. Me enferman los anuncios y que me espíen. Nunca veo los anuncios, pero me molesta un montón."
+      }
+    ]
+  },
+  {
+    "link-video": "  https://www.youtube.com/watch?v=-0fCKqoQN0E",
+    "comentarios": [
+      {
+        "autor": "@ehcualquiera1377",
+        "comentario": "Gracias midu por mantenernos al tanto, ojala la vida te retribuya todo lo que nos brindas. :D Bendiciones ^^"
+      },
+      {
+        "autor": "@glaze4629",
+        "comentario": "Para aportar con el tema de office, solo pequeñas partes de las apps usan react native, sin embargo planean seguir usandolo en mayor proporcion, para resaltar react native hace parte del sistema operativo, en windows 11 la pantalla de cuenta es RN al igual que parte del menu que sale cuando presionas la tecla \"windows\"\n\nPD: Fluent tambien esta disponible para usarse en RN, no se si la version 2 de este sistema"
+      },
+      {
+        "autor": "@letsrender7748",
+        "comentario": "Midu esta hecho con React"
+      },
+      {
+        "autor": "@thefabi8adev",
+        "comentario": "A mi si me gustó el Geist mono, se ve preciosa la letra en editor y la de sans-serif esta exquisita."
+      },
+      {
+        "autor": "@charliea6038",
+        "comentario": "Un detalle, no todo office usa React Native, en realidad solo se usa para ciertos componentes"
+      },
+      {
+        "autor": "@saralance506",
+        "comentario": "Se nota el deporte que estas haciendo Midu, enhorabuena! Salud es vida! en especial para un trabajo tan sedentario como el nuestro."
+      },
+      {
+        "autor": "@DAVIDIL81",
+        "comentario": "Apreciadisimo Midu... Aprovecho este video para animarte a seguir con tu curso de Astro...\n\nEstoy aprendiendo y Astro me gusta mucho..."
+      },
+      {
+        "autor": "@joanandres760",
+        "comentario": "Para aportar, Yarn es utilizado por debajo por Expo (La equivalencia de Next.js para React Native) para instalar las dependencias del proyecto."
+      },
+      {
+        "autor": "@placidop",
+        "comentario": "Midu, molaría un vídeo sobre cómo usar Astro con un Prismic. Estoy intentando montar algo con Astro y Prismic y es un dolor de cabeza. Enhorabuena por el canal!"
+      },
+      {
+        "autor": "@placidop",
+        "comentario": "Por cierto, a mí la versión 1 de Fluent me recordaba a Carbon de IBM, no me disgustaba el rollo cuadrado. Pero parece que han cambiado de objetivo totalmente e intentan pasar del rollo empresarial/serio/aburrido/trajeycorbata. Su diseño siempre ha sido un poco bipolar"
+      },
+      {
+        "autor": "@luiscarlosjayk",
+        "comentario": "X2 también estoy enamoradísimo de Astro, la verdad que se me hace muy genial, para ganarle amor nuevamente al Frontend."
+      },
+      {
+        "autor": "@karlosvas",
+        "comentario": "Normal si astro es la leche, para cuando otro proyecto con Astro? A mi me encanta 🫠"
+      },
+      {
+        "autor": "@ClaDev",
+        "comentario": "Mas contenido de Astro Midu , por favor!!. Like para que lo vea por favor."
+      },
+      {
+        "autor": "@estudiantina",
+        "comentario": "Con razón los sitios de Microsoft funcionan muy mal en mi PC. La web de Fluent 2 me funciona relativamente bien"
+      },
+      {
+        "autor": "@grandpowr",
+        "comentario": "Astro es un placer de desarrollar en el"
+      },
+      {
+        "autor": "@Rogelio654837",
+        "comentario": "Vengo de hacer programación de gráficos 3D y herramientas para artistas 3D. Y la programación web tiene un serio problema con la fragmentación, deberían de preocuparse más en los estándares de JS y Css para evitar necesitar tantos frameworks y perder tanto tiempo en aprender a hacer  lo mismo pero con otro framework."
+      },
+      {
+        "autor": "@jose6433",
+        "comentario": "no me creo mucho todo esto lo de Microsoft, tuvieron la \"fortuna\"de comprar OpenAI solamente, personalmente he trabajado durante bastante tiempo con los servicios de esta nube y si hay algo que puedo decir,  es que todo lo que muestran funciona muy bien ..."
+      },
+      {
+        "autor": "@j_pestana",
+        "comentario": "Midu, tu que estás muy enterado, ¿Para cuando on demand ISR para Astro con Vercel??\nQuiero poner un libro de visitas en mi blog, y estaría guay."
+      },
+      {
+        "autor": "@kf_11",
+        "comentario": "Esta buena también la de JetBrains Mono Nerd Font + powerlevel10k o OhMyPosh una lindura en la terminal"
+      },
+      {
+        "autor": "@gokuanisantiogan",
+        "comentario": "Midu recomendado fuentes para programar y yo programando desde hace años con la de minecraft xD"
+      },
+      {
+        "autor": "@diegofernandezm.1655",
+        "comentario": "Midu, ¿qué edad tienes? eres un crack!"
+      },
+      {
+        "autor": "@TheLibertarianForce",
+        "comentario": "Necesito mas cursos de ASTRO MIDU!"
+      },
+      {
+        "autor": "@rodolfolopezp",
+        "comentario": "Office para Windows está hecho con REACT?. Cómo lo compilan?. Con Docker?"
+      },
+      {
+        "autor": "@andresnaranjo2525",
+        "comentario": "mas de astro pls"
+      },
+      {
+        "autor": "@visama8379",
+        "comentario": "Yo pensaba que la fuente Geist se leía como en alemán, ya que significa \"la mente\""
+      },
+      {
+        "autor": "@ARMAPRO",
+        "comentario": "ahi discrepo contigo, la verdad es que en el gusto no hay nada descrito y es lo menos importante, pero si un cliente me dice yo lo quiero con linias puntiadas yo no le puedo decir que feo, le podría recomendar algo pero si el cliente insiste pues ahí nada que hacer es el que manda y paga y microsoft para muchos quizas no es de sus gustos a mi no me importa para nada si es cuadrado o redondeado, si tiene buen aspecto bien, para mi punto de vista me importa más otros puntos importantes y esos dideños no están por estar, puedes trabajar con cosas así dando un buen aspecto o mezclando, como digo quizas para muchos no les gusta pero para otros quizas si o quizas a un grupo de gente ni le importa, pero sería si no se entendiera o si no fuece funcional, pero si a microsoft le gustó y lo hizo así que se le va a hacer?, esto es igual que los chef de comida con 5 estrellas de michelin y se creen dioses, te presentan un  plato y quizas no te guste. Saludos rey. pdt: Aclaro que es mi opinión y lo miro de esa manera, tu canal es fenomenal y he aprendido mucho contigo, solo en agunas cositas no estoy de acuerdo pero puedo también estar equivocado, lo importante es conversar y debatir con respeto y estar abierto a opiniones logicamente."
+      },
+      {
+        "autor": "@jeros9183",
+        "comentario": "yo uso yarn cuando da errores de dependencia el npm i ... yarn las sabe resolver (por lo general)"
+      },
+      {
+        "autor": "@JesusDavidTorres",
+        "comentario": "Usan React Native sobre Xamarin/Maui. ¿No te parece eso curioso?"
+      },
+      {
+        "autor": "@enriqueruiz320",
+        "comentario": "Naaa no te creas Microsoft tiene la personalidad de un gato, así de voluble es "
+      },
+      {
+        "autor": "@byewar37",
+        "comentario": "Buen video"
+      },
+      {
+        "autor": "@JoseOrtega-oz2zx",
+        "comentario": "Divs cuadradados = horror, cutre, antiguo, desastre\nLo mismo con border-radius = la rehostia, supermoderno, guay, lo mejor"
+      },
+      {
+        "autor": "@dylanstevensuarezcruz5848",
+        "comentario": " Astro "
+      },
+      {
+        "autor": "@RubeNz3",
+        "comentario": "Ahora parece Apple su página"
+      },
+      {
+        "autor": "@avaricia369",
+        "comentario": "@Midu un Proyecto para descargar videos de YouTube."
+      },
+      {
+        "autor": "@nomadeyoga2157",
+        "comentario": "este video se hio con react, los comentarios; con react"
+      },
+      {
+        "autor": "@soran2290",
+        "comentario": "React native con razón están pésimas sus apps "
+      },
+      {
+        "autor": "@YakOwO",
+        "comentario": "Oye midu te ves muy bien con lentes"
+      },
+      {
+        "autor": "@nomadeyoga2157",
+        "comentario": "me asusta microsoft, me asusta lo bueno que pueda ser, hace como 30 años que debian cambiar el puto diseño jaojaoa"
+      },
+      {
+        "autor": "@alfredo_mtzrmz",
+        "comentario": "La mejor es MonoLisa :3"
+      },
+      {
+        "autor": "@jnisperuza1102",
+        "comentario": "Hey Midu"
+      },
+      {
+        "autor": "@siroZzzz",
+        "comentario": "Holas Midu"
+      },
+      {
+        "autor": "@RinconDP",
+        "comentario": "Team campana aqui!"
+      },
+      {
+        "autor": "@whimahwhe",
+        "comentario": "viva bun"
+      },
+      {
+        "autor": "@josemaenzo",
+        "comentario": "Fira Code > *\n\nLo siento"
+      },
+      {
+        "autor": "@FubukiKnowledge",
+        "comentario": "no entendí casi nada pero bueno"
+      }
+    ]
+  },
+  {
+    "link-video": "   https://www.youtube.com/watch?v=jy0IgvV42es",
+    "comentarios": [
+      {
+        "autor": "\n              @mouredev\n            ",
+        "comentario": "  Accede a todos los recursos formativos de Carmen Ansio y al archivo de diseño del vídeo:\n  https://recursoscosmicos.com\n  https://figma.com/community/file/1209486665855023976"
+      },
+      {
+        "autor": "@randolphcarter8283",
+        "comentario": "Sería mucho pedir una parte 2 de este taller de Figma?, se quedó cortísimo pero aprendí bastante , saludos Moure y Carmen"
+      },
+      {
+        "autor": "@icedev8078",
+        "comentario": "Yo estudié diseño gráfico aunque siempre me gustó la tecnología el queso y la programación c: y cuando estaba trabajando en diseño uno de mis mayores avances de nivel fue cuando empecé por la pre prensa saber cómo son las máquinas con las que imprimo sus limitaciones y funcionamiento me dieron la ventaja de aprovechar el diseño estructural, para ser honesto no soy del que se sienta y waff un diseño de éxito sino lo pienso lo analizo y lo hago así que me di cuenta que tal vez me gustaba más diseñar otras cosas como software y retome el desarrollo actualmente trabajo de gerente de una empresa de importación y uso mis skills de diseño, programación y finanzas por el bien de la empresa c: tan como dice la programación es necesaria al menos la base para poder diseñar las habilidades transversales son algo que da mucho más nivel en tu capacidad"
+      },
+      {
+        "autor": "@jeffersonloor6418",
+        "comentario": "Excelente contenido , gracias por el tiempo y dedicación "
+      },
+      {
+        "autor": "@brayanalbadam1039",
+        "comentario": "Este taller es una maravilla "
+      },
+      {
+        "autor": "@luisantonc",
+        "comentario": "Buen Video y muchisimas gracias por mencionar plugins... Siempre se aprende algo nuevo...  Un poquito de conocimiento de figma pero voy avanzando...."
+      },
+      {
+        "autor": "@k2stratocaster",
+        "comentario": "Wow, no tiene desperdicio. No he visto nunca un taller para que diseñadores se animen a codear. Pienso que con el DevMode de Figma, ahora puede ser mucho más viable un taller relámpago de Codigo para diseñadores.. Sé que es fácil decirlo pero por favor piénsenlo hahahaha"
+      },
+      {
+        "autor": "@tradetech7",
+        "comentario": "Yo aprendí Figma en un curso de desarrollo web, después hice el curso de UX de Google y ya fue más fácil llevar el curso"
+      },
+      {
+        "autor": "@luismhenriquez",
+        "comentario": "¡Increíble contenido, muchas gracias!"
+      },
+      {
+        "autor": "@nahueljj",
+        "comentario": "a mi me suelen dar los figma con un ancho fijo , por ejemplo en 360px pero desde 361 al 479, aveces queda un poco chico ciertos elementos, no estoy seguro de si es mi responsabilidad hacer los calculos de relacion al tamano orignal o si el cliente me tienen que dar las instrucciones en las medidas intermedias o pasarme le figma con auto layout y yo ir estirando para ver el comportamiento... no se si me explico."
+      },
+      {
+        "autor": "@emiliearo1393",
+        "comentario": "Hola. Me gustaría saber qué orden de concepción sería mejor. Hacer primero mobile con auto layout y luego hacer tablet y por último desktop, o viceversa?"
+      },
+      {
+        "autor": "@paolaagudelo3672",
+        "comentario": "Gran taller, muchas gracias Carmen"
+      },
+      {
+        "autor": "@berentolkien5673",
+        "comentario": "uff me vino como anillo al dedo, justo me presentaron un trabajo con figma, y yo sin tenia idea que era figma... y subis este video en el momento adecuado.... me salvaron genios!!!!"
+      },
+      {
+        "autor": "@Jesus-hi6qy",
+        "comentario": "Que tal invitada  gracias Moure "
+      },
+      {
+        "autor": "@rosamariamontero3770",
+        "comentario": "He visto por ahí varias peticiones sobre una segunda parte. Me sumo a ellas. "
+      },
+      {
+        "autor": "@nadiaujovich7989",
+        "comentario": "Genios los dos!!! Muchas gracias por compartir!"
+      },
+      {
+        "autor": "@FernandoLopez-vc2ld",
+        "comentario": "Muy buen contenido, muchas gracias."
+      },
+      {
+        "autor": "@arielviale77",
+        "comentario": "Gran aporte!"
+      },
+      {
+        "autor": "@gabrielfer5974",
+        "comentario": "Muchas gracias por compartir!!!"
+      },
+      {
+        "autor": "@DiegoRodriguez-uo4rz",
+        "comentario": "excelente!"
+      },
+      {
+        "autor": "@gabrielsotto9529",
+        "comentario": "el titulo ese de ux engineer es algo que se le da a los que saben desarrollo y diseño? O existe ese título realmente? y que diferencia hay con un product designer?"
+      },
+      {
+        "autor": "@sergioalmagre",
+        "comentario": "Grandes!"
+      },
+      {
+        "autor": "@yapp8666",
+        "comentario": "Hola MaureDev podrías responderme algunas dudas por favor ??????"
+      },
+      {
+        "autor": "@bibliotech4926",
+        "comentario": "Mas parece un taller de filosofia xd"
+      },
+      {
+        "autor": "@MiguelMartinezR",
+        "comentario": "Que pena que no se vea el cursor del raton"
+      },
+      {
+        "autor": "@elweonweandolaweafome",
+        "comentario": "Me fui al can't unseen 27:36 pero ya regresé xd"
+      },
+      {
+        "autor": "@Elfujitoh",
+        "comentario": "valgame llegue re tarde, esta chica tan valiosa tendra un grupo de discord?"
+      },
+      {
+        "autor": "@davidcarmona6994",
+        "comentario": "Hola si tengo una pc Windows y uso fluterr puedo desarrollar una App para oís y andriod pero para compilar en oís tendría q tener una Mac?"
+      },
+      {
+        "autor": "@BetGeniusProVe",
+        "comentario": "Buenos dias, excelente video, recomendacion (hablar menos chachara en el video) ir al grano."
+      },
+      {
+        "autor": "@robotvivo5158",
+        "comentario": "Esta chica vale lo que pesa.\n\nEdito para pedirle matrimonio a esta chica"
+      }
+    ]
+  }
+]

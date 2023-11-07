@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analizador de Comentarios</title>
+</head>
+<body>
+    <h1>Analizador de Comentarios</h1>
+
+    <form id="commentForm">
+        <label for="videoUrls">URLs de Videos (separadas por comas):</label>
+        <input type="text" id="videoUrls" name="videoUrls" required>
+        <button type="submit">Analizar</button>
+    </form>
+
+    <h2>Resultados:</h2>
+    <div id="results"></div>
+
+    <script>
+        const commentForm = document.getElementById('commentForm');
+        const resultsDiv = document.getElementById('results');
+
+        commentForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const videoUrlsInput = document.getElementById('videoUrls');
+            const videoUrls = videoUrlsInput.value.split(',');
+
+            const response = await fetch('/analizar-comentarios/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ video_urls: videoUrls })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+
+                // Render the results
+                let resultsHtml = '';
+                data.forEach(comment => {
+                    resultsHtml += `<p><strong>Autor:</strong> ${comment.autor}</p>`;
+                    resultsHtml += `<p><strong>Comentario:</strong> ${comment.comentario}</p>`;
+                    resultsHtml += `<p><strong>Sentimiento:</strong> ${comment.sentimiento}</p>`;
+                    resultsHtml += '<hr>';
+                });
+
+                resultsDiv.innerHTML = resultsHtml;
+            } else {
+                resultsDiv.innerHTML = '<p>Error al enviar la solicitud.</p>';
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- http://localhost:8000/ -->
