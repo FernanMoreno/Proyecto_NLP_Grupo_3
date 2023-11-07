@@ -1,0 +1,18 @@
+<h1>Analizador de Comentarios</h1>
+
+<form (ngSubmit)="analizarComentarios()" [formGroup]="commentForm">
+  <label for="videoUrls">URLs de Videos (separadas por comas):</label>
+  <input type="text" id="videoUrls" name="videoUrls" formControlName="videoUrls" required>
+  <button type="submit">Analizar</button>
+</form>
+
+<h2>Resultados:</h2>
+<div id="results">
+  <div *ngFor="let comment of comments">
+    <p><strong>Autor:</strong> {{ comment.autor }}</p>
+    <p><strong>Comentario:</strong> {{ comment.comentario }}</p>
+    <p><strong>Sentimiento:</strong> {{ comment.sentimiento }}</p>
+    <hr>
+  </div>
+</div>
+

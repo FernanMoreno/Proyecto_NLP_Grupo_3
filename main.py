@@ -23,14 +23,14 @@ app.add_middleware(
 )
 
 # Directorio donde se encuentra el archivo HTML y archivos estáticos
-static_dir = "frontend"
+# static_dir = "frontend"
 
-app.mount("/static", StaticFiles(directory=static_dir), name="static")
+# app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
-# Ruta para servir el archivo HTML
-@app.get("/")
-async def get_html():
-    return FileResponse(f"{static_dir}/index.html")
+# # Ruta para servir el archivo HTML
+# @app.get("/")
+# async def get_html():
+#     return FileResponse(f"{static_dir}/index.html")
 
 # URL del servidor Express
 server_url = 'http://localhost:3000'  # Cambia esto si tu servidor se ejecuta en un host o puerto diferente
