@@ -14,6 +14,7 @@ class AnalizadorComentarios:
             # Lista para almacenar comentarios y sus análisis de sentimiento
             comentarios_con_sentimiento = []
 
+
             # Iterar a través de los comentarios de varios videos
             for video in comentarios:
                 video_comentarios = video['comentarios']
