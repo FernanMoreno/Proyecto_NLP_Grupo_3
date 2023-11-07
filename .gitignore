@@ -163,3 +163,5 @@ cython_debug/
 
 env_nlp
 .env
+my
+youtoxic_english_1000.csv
