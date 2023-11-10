@@ -33,9 +33,16 @@
     padding: 20px;
 }
 
+.contador{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+}
+
 #btn-analizar{
     margin-top: 35px;
-    width: 50%;
+    width: 100%;
     height: 60px;
     color: white;
     font-size: 22px;
@@ -53,6 +60,14 @@
 }
 
 
+.video-prosesandose-contenedor{
+    height: 200px;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid red;
+}
+
+
 
 
 
@@ -66,7 +81,7 @@
 
 
 .comentario-contenedor-principal{
-    border-bottom: 1px solid rgb(220, 220, 220);
+    /* border-bottom: 1px solid rgb(220, 220, 220); */
     padding: 15px 0;
     width: 100%;
     display: flex;

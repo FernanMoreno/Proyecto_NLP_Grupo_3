@@ -3,7 +3,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) -350%,rgb(255, 255, 255)45%), url('../../assets/fondo7.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) -250%,rgb(255, 255, 255)45%), url('../../assets/fondo10.jpg');
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: center top;

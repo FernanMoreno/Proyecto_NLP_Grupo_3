@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { BusquedaPorTemaComponent } from './busqueda-por-tema/busqueda-por-tema.component';
 import { NavComponent } from './nav/nav.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
