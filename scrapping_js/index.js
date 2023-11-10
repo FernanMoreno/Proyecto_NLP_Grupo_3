@@ -21,11 +21,16 @@ app.post('/api/scrap-comments', async (req, res) => {
     await page.goto('https://www.youtube.com');
     const commentScraper = new CommentScraper(page);
     const comentarios_data = await commentScraper.recopilarComentarios(urls);
-    console.log(comentarios_data)
     await browser.close();
     res.json(comentarios_data);
-    fs.writeFileSync('comentarios.json', JSON.stringify(comentarios_data, null, 2));
 });
+
+
+
+
+
+
+
 
 
 
@@ -47,7 +52,6 @@ app.post('/api/search-and-scrap-videos', async (req, res) => {
     const comentarios_data = await commentScraper.recopilarComentarios(searchResults);
     await browser.close();
     res.json(comentarios_data);
-    fs.writeFileSync('comentarios.json', JSON.stringify(comentarios_data, null, 2));
 });
 
 

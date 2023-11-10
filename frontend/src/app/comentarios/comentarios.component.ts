@@ -25,6 +25,7 @@ export class ComentariosComponent {
     this.http.post<any>('http://127.0.0.1:8000/analizar-comentarios/', { video_urls: videoUrls }).subscribe(
       (data) => {
         this.comments = data;
+        console.log(this.comments)
       },
       (error) => {
         console.error('Error al enviar la solicitud.', error);

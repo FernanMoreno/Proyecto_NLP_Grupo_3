@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const fs = require('fs');
 
 class CommentScraper {
     constructor(page) {
@@ -36,15 +37,22 @@ class CommentScraper {
                     const comentarios = [];
                     const content = document.querySelector('#comments #contents');
                     const contentLength = content.children.length - 1;
+                    const currentUrl = window.location.href;
 
                     for (let k = 0; k < contentLength; k++) {
                         const contentElement = content.children[k];
-                        const autorComment = contentElement.querySelector('#author-text span')?.innerText || 'Autor no encontrado';
-                        const textComment = contentElement.querySelector('#content-text')?.innerText || 'Comentario no encontrado';
+                        const img_autor = contentElement.querySelector('#author-thumbnail #img')?.src || 'vacio';
+                        const link_autor = contentElement.querySelector('#header-author h3')?.childNodes[1]?.href || 'vacio';
+                        const autorComment = contentElement.querySelector('#author-text span')?.innerText || 'vacio';
+                        const textComment = contentElement.querySelector('#content-text')?.innerText || 'vacio';
+                        const link_video = currentUrl
 
                         let comentario = {
+                            'img_autor':img_autor,
+                            'link_autor':link_autor,
                             'autor': autorComment,
                             'comentario': textComment,
+                            'link_video' : link_video
                         };
                         comentarios.push(comentario);
                     }

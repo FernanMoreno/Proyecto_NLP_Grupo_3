@@ -17,6 +17,11 @@ class APIConsumer:
             print(f"Error: {response.status_code}")
             return None
 
+
+
+
+
+
     def search_and_scrap_videos(self, query):
         endpoint = f"{self.server_url}/api/search-and-scrap-videos"
         data = {'query': query}
