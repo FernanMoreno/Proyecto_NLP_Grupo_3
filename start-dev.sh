@@ -11,7 +11,7 @@ uvicorn main:app --host 0.0.0.0 --port 8000 &
 sleep 2
 
 # Cambia al directorio de Angular (debes ajustar la ruta)
-cd frontend/app
+cd frontend
 
 # Inicia el servidor de desarrollo de Angular en segundo plano
 ng serve &
@@ -21,3 +21,19 @@ cd ..
 
 # Informa que los servidores se han iniciado
 echo "Servidores Node.js, FastAPI y Angular en ejecución."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ejecutar
+# chmod +x start-dev.sh && ./start-dev.sh

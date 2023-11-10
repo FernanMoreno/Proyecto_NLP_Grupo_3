@@ -5,7 +5,7 @@ from fastapi.staticfiles import StaticFiles
 from starlette.responses import FileResponse
 from pydantic import BaseModel
 from consume_api_youtube import APIConsumer
-from analizer_sentiment import AnalizadorComentarios
+from modelo import ModeloClass
 import os
 
 
@@ -22,16 +22,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Directorio donde se encuentra el archivo HTML y archivos estáticos
-# static_dir = "frontend"
-
-# app.mount("/static", StaticFiles(directory=static_dir), name="static")
-
-# # Ruta para servir el archivo HTML
-# @app.get("/")
-# async def get_html():
-#     return FileResponse(f"{static_dir}/index.html")
-
 # URL del servidor Express
 server_url = 'http://localhost:3000'  # Cambia esto si tu servidor se ejecuta en un host o puerto diferente
 
@@ -45,39 +35,13 @@ class VideoUrls(BaseModel):
 @app.post("/analizar-comentarios/")
 def analizar_comentarios(video_data: VideoUrls):
     video_urls = video_data.video_urls
-
     # Scrap comments from YouTube
     result = api_consumer.scrap_comments(video_urls)
-    
     # Clase AnalizadorComentarios para analizar los comentarios
-    analizador = AnalizadorComentarios()
-    
+    modelo = ModeloClass()
     # Analizar los comentarios y devolverlos
-    comentarios_con_sentimiento = analizador.analizar_comentarios(result)
-
+    comentarios_con_sentimiento = modelo.analizar_comentarios(result)
     return comentarios_con_sentimiento
-
-
-
-
-
-
-
-
-
-    
-
-
-# uvicorn main:app --reload
-
-
-
-
-
-
-
-
-
 
 
 
