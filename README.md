@@ -1,6 +1,6 @@
-<img src="https://raw.githubusercontent.com/AI-School-F5-P2/Proyecto_NLP_Grupo_3/develop/frontend/src/assets/logo.png" alt="Texto alternativo" width="400" >
+<img src="https://raw.githubusercontent.com/AI-School-F5-P2/Proyecto_NLP_Grupo_3/develop/frontend/src/assets/logo.png" alt="Texto alternativo" width="400" m>
 
-
+<br>
 
 # Desafío: Mensajes de Odio en YouTube
 
@@ -10,7 +10,10 @@ YouTube enfrenta un desafío significativo con la proliferación de mensajes de 
 
 Ante esta situación, YouTube ha decidido subcontratar a nuestra consultora para desarrollar una solución automatizada que permita detectar mensajes de odio. La solución debe posibilitar la eliminación rápida de contenido inapropiado y la aplicación de medidas, como la prohibición de usuarios cuando sea necesario.
 
+<br>
+<br>
 
+##INSTALACION
 
  **Clonar el Repositorio:**
 
