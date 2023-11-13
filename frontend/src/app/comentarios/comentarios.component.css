@@ -1,11 +1,21 @@
-.contenedor-principal{
+.contenedor-principal {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     margin-top: 50px;
     position: relative;
+    opacity: 0;
+    animation: fadeIn .2s ease-in-out forwards;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 .seccion-formulario{
     width: 50%;
@@ -86,6 +96,18 @@
     width: 100%;
     display: flex;
     position: relative;
+    animation: fade .2s ease-in-out forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        /* transform: translateY(50px); */
+    }
+    100% {
+        opacity: 1;
+        /* transform: translateY(0px); */
+    }
 }
 
 .comentario-contenedor-principal .img-autor{
