@@ -10,22 +10,48 @@ YouTube enfrenta un desafío significativo con la proliferación de mensajes de 
 
 Ante esta situación, YouTube ha decidido subcontratar a nuestra consultora para desarrollar una solución automatizada que permita detectar mensajes de odio. La solución debe posibilitar la eliminación rápida de contenido inapropiado y la aplicación de medidas, como la prohibición de usuarios cuando sea necesario.
 
-## Plazos
 
-Se espera que presentemos nuestras propuestas de solución en 22 días, y la presentación oficial se llevará a cabo el día 23 de Noviembre del 2023.
 
-## Condiciones de Entrega
+ **Clonar el Repositorio:**
 
-Para la reunión programada, se requiere la entrega de:
+    ```bash
+    git clone https://github.com/AI-School-F5-P2/Proyecto_NLP_Grupo_3.git
+    cd Proyecto_NLP_Grupo_3
+    ```
 
-### Presentación y Demostración:
+2. **Instalar Node.js:**
 
-- Exposición clara de la propuesta de solución.
-- Demostración práctica del funcionamiento.
+    Si no tienes Node.js instalado, descárgalo desde [nodejs.org](https://nodejs.org/) o mediante tu gestor de paquetes preferido.
 
-### Defensa de la Elección:
+3. **Instalar Dependencias del Proyecto:**
 
-- Explicación y justificación de la elección de la solución propuesta.
-- Destacar las razones por las cuales consideramos que esta solución es la más adecuada.
+    En el directorio principal del proyecto, ejecuta:
 
-El enfoque debe ser práctico y eficiente, priorizando la implementación de la solución sobre la precisión de la herramienta. El objetivo es abordar de manera efectiva el problema de los mensajes de odio en los comentarios de videos en YouTube.
+    ```bash
+    npm install
+    ```
+
+4. **Instalar Dependencias del Modelo (backend/api_modelo):**
+5. Posicionate en el archivo raiz y escribes los siguientes comando en la consola:
+
+    ```bash
+    cd backend/api_modelo
+    pip install -r requirements.txt
+    ```
+
+
+6. **Ejecutar el Proyecto:**
+
+    Posicionate en el archivo raiz y escribe el siguiente comando  en la consola:
+
+    ```
+    chmod +x start-dev.sh && ./start-dev.sh
+    ```
+
+Este script iniciará los servidores Node.js, FastAPI y Angular, y esperará un momento para que se inicien adecuadamente.
+
+6. **Acceder a la Aplicación:**
+
+    Una vez que los servidores estén en ejecución, puedes acceder a tu aplicación Angular en [http://localhost:4200/](http://localhost:4200/)
+
+¡Listo! Ahora tu aplicación está en funcionamiento. Asegúrate de ajustar las rutas y los puertos según la configuración específica de tu proyecto.
