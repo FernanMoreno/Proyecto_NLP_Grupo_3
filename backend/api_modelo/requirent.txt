@@ -2,8 +2,6 @@ pandas
 numpy
 matplotlib
 scikit-learn
---upgrade google-api-python-client
 python-decouple
-youtube-dl
 fastapi
 requests
