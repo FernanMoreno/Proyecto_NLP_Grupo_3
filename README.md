@@ -69,6 +69,6 @@ Este script iniciará los servidores Node.js, FastAPI y Angular, y esperará un 
 <br>
 <br>
 
-<img src="https://github.com/AI-School-F5-P2/Proyecto_NLP_Grupo_3/blob/develop/frontend/src/assets/Captura%20de%20pantalla%20(207).png" alt="Texto alternativo" width="100%" m>
+<img src="https://github.com/AI-School-F5-P2/Proyecto_NLP_Grupo_3/blob/develop/frontend/src/assets/capture-home.png" alt="Texto alternativo" width="100%" m>
 
 <br>
