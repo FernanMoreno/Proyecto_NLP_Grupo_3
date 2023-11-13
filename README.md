@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/AI-School-F5-P2/Proyecto_NLP_Grupo_3/develop/frontend/src/assets/logo.png" alt="Texto alternativo" width="400" >
+
 
 
 # Desafío: Mensajes de Odio en YouTube
