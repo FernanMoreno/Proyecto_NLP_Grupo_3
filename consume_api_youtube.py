@@ -4,6 +4,7 @@ class APIConsumer:
     def __init__(self, server_url):
         self.server_url = server_url
 
+
     def scrap_comments(self, urls):
         endpoint = f"{self.server_url}/api/scrap-comments"
         data = {'urls': urls}
@@ -16,10 +17,6 @@ class APIConsumer:
         else:
             print(f"Error: {response.status_code}")
             return None
-
-
-
-
 
 
     def search_and_scrap_videos(self, query):

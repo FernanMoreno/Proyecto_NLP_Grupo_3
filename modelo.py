@@ -10,11 +10,8 @@ class ModeloClass:
     def analizar_comentarios(self, comentarios_data):
         if comentarios_data:
             comentarios = comentarios_data
-
             # Lista para almacenar comentarios y sus análisis de sentimiento
             comentarios_con_sentimiento = []
-
-
             # Iterar a través de los comentarios de varios videos
             for video in comentarios:
                 video_comentarios = video['comentarios']
@@ -35,7 +32,7 @@ class ModeloClass:
                         sentimiento = "Negativo"
                     else:
                         sentimiento = "Neutral"
-
+                        
                     # Crear un diccionario que almacena el comentario y su análisis de sentimiento
                     comentario_con_sentimiento = {
                         "img_autor": img_autor,

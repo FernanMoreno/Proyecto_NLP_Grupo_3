@@ -17,7 +17,7 @@ export class ComentariosComponent {
   num_videos_cargados = 0
   link_video_en_proceso: SafeResourceUrl | undefined;
   text_loading!:string
-
+  url_api_consumer = 'http://127.0.0.1:8000/analizar-comentarios/'
 
   constructor(private http: HttpClient, private sanitizer: DomSanitizer) {
     this.commentForm = new FormGroup({
@@ -26,27 +26,10 @@ export class ComentariosComponent {
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
- 
-
   analizarComentarios() {
     const videoUrls = this.commentForm.get('videoUrls')?.value.split(',');
     this.num_videos_cargados = videoUrls.length
     this.comments = [];  // Limpiar el array de comentarios
-    // this.num_videos_cargados=0
     this.num_videos_procesados=0
     
     // Funcion recursiva para realizar las peticiones una por una
@@ -57,14 +40,13 @@ export class ComentariosComponent {
         this.text_loading = 'Escrapeando...'
         this.num_videos_procesados = index + 1
 
-        this.http.post<any>('http://127.0.0.1:8000/analizar-comentarios/', { video_urls: [url] }).subscribe(
+        this.http.post<any>(this.url_api_consumer, { video_urls: [url] }).subscribe(
           (data) => {
             // this.comments.push(data);
 
             data.forEach((comentario: any) => {
               this.comments.unshift(comentario);
             });
-
 
             // Llamo recursivamente para la siguiente URL
             realizarPeticion(index + 1);
@@ -82,13 +64,8 @@ export class ComentariosComponent {
           
         } else{
           this.text_loading = 'Se han escrapeado'
-          // this.num_videos_cargados = 0
-          // this.num_videos_procesados = 0
-        }
-   
-        
+        }   
     }
-
     // Inicio la secuencia de peticiones
     realizarPeticion(0);
     
