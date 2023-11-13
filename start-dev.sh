@@ -9,6 +9,7 @@ cd api_modelo
 # Inicia el servidor FastAPI en segundo plano
 uvicorn main:app --host 0.0.0.0 --port 8000 &
 
+
 # Espera un momento para que el servidor FastAPI se inicie (ajusta según sea necesario)
 sleep 2
 
