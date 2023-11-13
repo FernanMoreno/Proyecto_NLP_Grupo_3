@@ -1,3 +1,5 @@
+<br>
+
 <img src="https://raw.githubusercontent.com/AI-School-F5-P2/Proyecto_NLP_Grupo_3/develop/frontend/src/assets/logo.png" alt="Texto alternativo" width="400" m>
 
 <br>
@@ -13,7 +15,7 @@ Ante esta situación, YouTube ha decidido subcontratar a nuestra consultora para
 <br>
 <br>
 
-##INSTALACION
+## INSTALACION
 
  **Clonar el Repositorio:**
 
@@ -58,3 +60,14 @@ Este script iniciará los servidores Node.js, FastAPI y Angular, y esperará un 
     Una vez que los servidores estén en ejecución, puedes acceder a tu aplicación Angular en [http://localhost:4200/](http://localhost:4200/)
 
 ¡Listo! Ahora tu aplicación está en funcionamiento. Asegúrate de ajustar las rutas y los puertos según la configuración específica de tu proyecto.
+
+
+
+
+
+<br>
+<br>
+
+<img src="https://github.com/AI-School-F5-P2/Proyecto_NLP_Grupo_3/blob/develop/frontend/src/assets/img-home.png" alt="Texto alternativo" width="100%" m>
+
+<br>
