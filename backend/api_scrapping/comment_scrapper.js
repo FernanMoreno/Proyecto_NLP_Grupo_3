@@ -29,7 +29,7 @@ class CommentScraper {
                 await this.scrollDown();
                 await new Promise(resolve => setTimeout(resolve, 1000));
             }
-
+            
             try{
                 await this.page.waitForSelector('#comments');
 

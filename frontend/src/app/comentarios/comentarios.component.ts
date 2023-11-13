@@ -18,6 +18,10 @@ export class ComentariosComponent {
   link_video_en_proceso: SafeResourceUrl | undefined;
   text_loading!:string
   url_api_consumer = 'http://127.0.0.1:8000/analizar-comentarios/'
+  pagination = false
+
+  itemsPerPage = 15; // Número de comentarios por página
+  currentPage = 1; // Página actual
 
   constructor(private http: HttpClient, private sanitizer: DomSanitizer) {
     this.commentForm = new FormGroup({
@@ -26,12 +30,30 @@ export class ComentariosComponent {
   }
 
 
+  nextPage() {
+    if (this.currentPage * this.itemsPerPage < this.comments.length) {
+      this.currentPage++;
+    }
+  }
+
+  previousPage() {
+    if (this.currentPage > 1) {
+      this.currentPage--;
+    }
+  }
+
+  //funcion para saber cuantas paginas de comenterios hay
+  getTotalPages(): number {
+    let numTotalPages =  Math.ceil(this.comments.length / this.itemsPerPage);
+    return numTotalPages
+  }
+
   analizarComentarios() {
     const videoUrls = this.commentForm.get('videoUrls')?.value.split(',');
     this.num_videos_cargados = videoUrls.length
     this.comments = [];  // Limpiar el array de comentarios
     this.num_videos_procesados=0
-    
+
     // Funcion recursiva para realizar las peticiones una por una
     const realizarPeticion = (index: number) => {
       if (index < this.num_videos_cargados) {
@@ -42,20 +64,32 @@ export class ComentariosComponent {
 
         this.http.post<any>(this.url_api_consumer, { video_urls: [url] }).subscribe(
           (data) => {
-            // this.comments.push(data);
+              // valido que la data no sea undefined para ejecutar el foreach
+              if (data){
+                data.forEach((comentario: any) => {
+                  this.comments.unshift(comentario);
+                });
+                // Llamo recursivamente para la siguiente URL
+                realizarPeticion(index + 1);
 
-            data.forEach((comentario: any) => {
-              this.comments.unshift(comentario);
-            });
+              } else{
+                //la url no tenia comentarios para escrapear
+                console.warn(`La respuesta para ${url} es null o undefined.`);
+                // Llamo recursivamente para la siguiente URL
+                realizarPeticion(index + 1);
+              }
 
-            // Llamo recursivamente para la siguiente URL
-            realizarPeticion(index + 1);
-            // this.num_videos_procesados = index + 1
           },
           (error) => {
-            console.error(`Error al enviar la solicitud para ${url}.`, error);
-            this.comments.push({ error: `Error al analizar comentarios para ${url}` });
 
+            if (error.status === 404) {
+              // Manejar el caso específico de URL no encontrada
+              this.comments.push({ error: `La URL ${url} no existe o no está disponible.` });
+              console.log(`La URL ${url} no existe o no está disponible.` )
+            } else {
+              this.comments.push({ error: `Error al analizar comentarios para ${url}` });
+              console.log( `Error al analizar comentarios para ${url}`)
+            }
             // Llamo recursivamente para la siguiente URL
             realizarPeticion(index + 1);
           }
