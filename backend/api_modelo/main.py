@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from starlette.responses import FileResponse
 from pydantic import BaseModel
-from consume_api_youtube import APIConsumer
+from consume_api_scrapping import API_scrapping_class
 from modelo import ModeloClass
 import os
 
@@ -26,7 +26,7 @@ app.add_middleware(
 server_url = 'http://localhost:3000'  # Cambia esto si tu servidor se ejecuta en un host o puerto diferente
 
 # Crea una instancia de la clase APIConsumer
-api_consumer = APIConsumer(server_url)
+api_consumer = API_scrapping_class(server_url)
 
 class VideoUrls(BaseModel):
     video_urls: List[str]
