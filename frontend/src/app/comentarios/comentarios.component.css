@@ -1,0 +1,249 @@
+.contenedor-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn .2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.contenedor-pagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 
+    50px;
+    z-index: 1000;
+}
+
+.pagination{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(43, 43, 43, 0.3) 0px 1px 3px -1px;
+    background-color: rgba(255, 255, 255, 0.947);
+    backdrop-filter: blur(10px);
+    padding: 5px 10px;
+    width: auto;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #707070;
+    font-weight: 600;
+    font-size: 14px;
+   
+}
+
+.pagination button{
+    opacity: .7;
+    border: none;
+    background-color: #00000000;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pagination button:hover{
+    opacity: 1;
+}
+
+
+.pagination button img{
+    width: 100%;
+}
+
+.seccion-formulario{
+    width: 50%;
+}
+
+.seccion-formulario form{
+    position: sticky;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#label-urls{
+    color: rgb(120, 120, 120);
+}
+
+#videoUrls{
+    height: 50vh;
+    margin-top: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.496) 0px 1px 3px -1px;
+    border-radius: 15px;
+    /* border: 2px solid rgb(210, 210, 210); */
+    border: none;
+    resize: none;
+    padding: 20px;
+}
+
+.contador{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+}
+
+#btn-analizar{
+    margin-top: 35px;
+    width: 100%;
+    height: 60px;
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color:#065fd4;
+}
+
+#btn-analizar:active {
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+    background-color: #1272f0;
+}
+
+
+.video-prosesandose-contenedor{
+    height: 200px;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+.seccion-lista-comentarios{
+    width: 50%;
+    padding: 0 0 0 70px;
+    
+}
+
+#results{
+    margin-top: 20px;
+}
+
+
+.comentario-contenedor-principal{
+    /* border-bottom: 1px solid rgb(220, 220, 220); */
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    position: relative;
+    animation: fade .2s ease-in-out forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: .5;
+        /* transform: translateY(50px); */
+    }
+    100% {
+        opacity: 1;
+        /* transform: translateY(0px); */
+    }
+}
+
+.comentario-contenedor-principal .img-autor{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.comentario{
+    padding: 0 10px;
+}
+
+.comentario .header{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+#user_name{
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#user_name a {
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    color: #0f0f0f;
+}
+
+#time{
+    font-size: 12px;
+    margin-bottom: 2px;
+    color: #7c7c7c;
+}
+
+.contenedor-comentario p{
+    margin-top: 5px;
+    font-size: 15px;
+    color: #0f0f0f;
+    /* font-weight: 500; */
+    line-height: 20px;
+    
+}
+
+
+.footer{
+ width: auto;
+ height: auto;
+ margin-top: 10px;
+}
+
+.footer a{
+    padding: 2px 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#sentimiento, #video-redirect{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+#btn-delete{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    position: absolute;
+    border: none;
+    right: 0px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#btn-delete .img{
+    width: 100%;
+}
+
