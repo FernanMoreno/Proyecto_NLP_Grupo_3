@@ -21,6 +21,11 @@ class CommentScraper {
     }
 
 
+
+
+
+
+
     async abrir_sub_comentario() {
         await this.page.evaluate(() => {
             const bnt_expander_comments = document.querySelectorAll("#expander .more-button ");
@@ -77,14 +82,13 @@ class CommentScraper {
                     // abro los subcomentarios
                     this.abrir_sub_comentario()
                     // espero 1 segundo
-                    await new Promise(resolve => setTimeout(resolve, 1000));
+                    await new Promise(resolve => setTimeout(resolve, 1300));
                 } else{
                     break
                 }
                 
             }
-
-            
+ 
             try{
                 await this.page.waitForSelector('#comments');
 
@@ -144,6 +148,10 @@ class CommentScraper {
                 this.todosLosComentarios.push({ 'link-video': video, 'comentarios': comentarios });
                 // this.mostrarComentarios();
                 console.log('Se han analizado ' + this.todosLosComentarios.length + ' videos');
+
+        
+                // this.iniciarObservacion()
+
                 await new Promise(resolve => setTimeout(resolve, 1000));
             } catch (error)  {
                 console.log(`No se pudo encontrar el elemento #comments en el video ${video}. Continuando con el siguiente video.`);
