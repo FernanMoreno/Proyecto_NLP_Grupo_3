@@ -1,0 +1,56 @@
+<app-nav></app-nav>
+<div class="contenedor-principal">
+  <section class="seccion-formulario">
+    <form (ngSubmit)="analizarComentarios()" [formGroup]="commentForm">
+      <label id="label-urls" for="videoUrls">URLs de Videos (separadas por comas)</label>
+      <textarea type="texta" id="videoUrls" name="videoUrls" formControlName="videoUrls" required></textarea>
+      <button id="btn-analizar" type="submit">Escrapear</button>
+    </form>
+    <p class="contador">{{text_loading}} {{ num_videos_procesados }} / {{ num_videos_cargados}} </p>
+
+    
+  </section>
+
+
+  <section class="seccion-lista-comentarios">
+
+    <div *ngIf="getTotalPages() > 0" class="contenedor-pagination" >
+      <div class="pagination">
+        <button (click)="previousPage()" [disabled]="currentPage === 1"><img src="../../assets/flecha-izquierda.png" alt=""></button>
+        <span>Página {{ currentPage }}  de {{ getTotalPages() }}</span>
+        <button (click)="nextPage()" [disabled]="currentPage * itemsPerPage >= comments.length"><img src="../../assets/flecha-derecha.png" alt=""></button>
+      </div>
+    </div>
+
+    <div id="results">
+      <div *ngFor="let comment of comments.slice((currentPage-1)*itemsPerPage, currentPage*itemsPerPage)" class="comentario-contenedor-principal">
+        <button id="btn-delete" title="Borrar video de youtube">
+          <img class="img" src="../../assets/borrar.png" alt="">
+        </button>
+        <a target="_blank" [href]="comment.link_autor" class="contenedor-img-autor">
+          <img class="img-autor" [src]="comment.img_autor" alt="">
+        </a>
+  
+        <div class="comentario">
+          <div class="header">
+            <p title="nombre del usuario" id="user_name"><a target="_blank" [href]="comment.link_autor">{{ comment.autor }}</a></p>
+            <p id="time">Hace 2 minutos</p>
+          </div>
+          <div class="contenedor-comentario">
+            <p>{{ comment.comentario }}</p>
+          </div>
+          <div class="footer">
+            <p id="sentimiento"><strong>Sentimiento:</strong> {{ comment.sentimiento }}</p>
+            <p title="ir al video en youtube" id="video-redirect"><strong>video:</strong><a target="_blank" [href]="comment.link_video">Ir al video</a></p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+  </section>
+
+
+  
+</div>
+
