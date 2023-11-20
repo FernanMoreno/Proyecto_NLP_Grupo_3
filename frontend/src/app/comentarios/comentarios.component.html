@@ -15,6 +15,7 @@
   <section class="seccion-lista-comentarios">
 
     <div *ngIf="getTotalPages() > 0" class="contenedor-pagination" >
+      
       <div class="pagination">
         <button (click)="previousPage()" [disabled]="currentPage === 1"><img src="../../assets/flecha-izquierda.png" alt=""></button>
         <span>Página {{ currentPage }}  de {{ getTotalPages() }}</span>
