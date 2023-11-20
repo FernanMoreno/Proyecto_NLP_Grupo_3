@@ -16,7 +16,7 @@ class CommentScraper {
             // Cierro modal de cookies
             await this.cerrarModal(this.page);
             // Voy haciendo escroll hasta que se terminen los comentarios
-            await new Promise(resolve => setTimeout(resolve, 1300));
+            await new Promise(resolve => setTimeout(resolve, 1000));
             
             while(true){
                 let booleano = await this.verificarFinDelDivComentarios()
@@ -26,19 +26,23 @@ class CommentScraper {
                     // abro los subcomentarios
                     this.abrir_sub_comentario()
                     // espero 1 segundo
-                    await new Promise(resolve => setTimeout(resolve, 1300));
+                    await new Promise(resolve => setTimeout(resolve, 700));
                 } else{
+                    console.log('termino bucle')
                     break // cierra el bucle
                 }
             }
  
             try{
+                await new Promise(resolve => setTimeout(resolve, 1500));
+                console.log('comenzo a leer comentarios')
                 // espero a que aparesca el contenedor de los cometarios
                 await this.page.waitForSelector('#comments');
                 // obtengo todos los datos de comentario, nombre del autor, link del autor, comentario, fecha
-                const comentarios = await this.page.evaluate(() => {
+                const comentarios = await this.page.evaluate(async () => {
                     const comentarios = [];
                     const content = document.querySelector('#comments #contents');
+                    console.log(content)
                     const contentLength = content.children.length;
                     const currentUrl = window.location.href;
                     // esta funcion recibe el contenedor de los comemarios y obtiene el comentario, el nombre del usuario, su foto de perfil.
@@ -63,6 +67,7 @@ class CommentScraper {
                         const contentElement = content.children[k];
                         comentarios.push(obtenerInformacionComentario(contentElement));
                         // obtengo el contendor que contine las respuestas de los comentarios
+                        // await this.page.waitForSelector('#replies #contents');
                         const replies = contentElement.querySelectorAll("#replies #contents")
                         // pregunto si el comenterio tiene respuestas
                         if (replies.length > 0){
@@ -85,7 +90,7 @@ class CommentScraper {
         }
         return this.todosLosComentarios
     }
-    
+
 
     async cerrarNavegador() {
         await this.page.close();
@@ -94,7 +99,7 @@ class CommentScraper {
 
     async scrollDown() {
         await this.page.evaluate(async () => {
-            window.scrollBy(0, window.innerHeight);
+            window.scrollBy(0, window.innerHeight / 2);
         });
     }
 

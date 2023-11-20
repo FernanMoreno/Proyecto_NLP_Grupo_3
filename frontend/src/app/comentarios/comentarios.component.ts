@@ -23,6 +23,7 @@ export class ComentariosComponent {
   numTotalComentarios:any = 0
   itemsPerPage = 15; // Número de comentarios por página
   currentPage = 1; // Página actual
+  escrapeando = false
 
   constructor(private http: HttpClient, private sanitizer: DomSanitizer) {
     this.commentForm = new FormGroup({
@@ -54,13 +55,14 @@ export class ComentariosComponent {
     this.num_videos_cargados = videoUrls.length
     this.comments = [];  // Limpiar el array de comentarios
     this.num_videos_procesados=0
+    this.numTotalComentarios = 0
    
     
 
     // Funcion recursiva para realizar las peticiones una por una
     const realizarPeticion = (index: number) => {
       if (index < this.num_videos_cargados) {
-        
+        this.escrapeando = true
         const url = videoUrls[index];
         this.text_loading = 'Escrapeando...'
         this.num_videos_procesados = index + 1
@@ -83,10 +85,11 @@ export class ComentariosComponent {
                 realizarPeticion(index + 1);
               }
               this.numTotalComentarios = this.comments.length
-              console.log(this.numTotalComentarios)
+              this.escrapeando = false
+              console.log(this.numTotalComentarios, ' Comentarios analizados')
           },
           (error) => {
-
+            this.escrapeando = false
             if (error.status === 404) {
               // Manejar el caso específico de URL no encontrada
               this.comments.push({ error: `La URL ${url} no existe o no está disponible.` });
