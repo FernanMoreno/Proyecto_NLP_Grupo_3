@@ -83,7 +83,7 @@ export class ComentariosComponent {
                 realizarPeticion(index + 1);
               }
               this.numTotalComentarios = this.comments.length
-
+              console.log(this.numTotalComentarios)
           },
           (error) => {
 
