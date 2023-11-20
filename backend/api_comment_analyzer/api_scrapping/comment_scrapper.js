@@ -41,15 +41,13 @@ class CommentScraper {
                     const content = document.querySelector('#comments #contents');
                     const contentLength = content.children.length;
                     const currentUrl = window.location.href;
-                    // itero en el contenedor que contiene el comentario
-                    for (let k = 0; k < contentLength; k++) {
-                        const contentElement = content.children[k];
+                    // esta funcion recibe el contenedor de los comemarios y obtiene el comentario, el nombre del usuario, su foto de perfil.
+                    const obtenerInformacionComentario = (contentElement)=>{
                         const img_autor = contentElement.querySelector('#author-thumbnail #img')?.src || 'vacio';
                         const link_autor = contentElement.querySelector('#header-author h3')?.childNodes[1]?.href || 'vacio';
                         const autorComment = contentElement.querySelector('#author-text')?.innerText || 'vacio';
                         const textComment = contentElement.querySelector('#content-text')?.innerText || 'vacio';
                         const link_video = currentUrl
-
                         let comentario = {
                             'img_autor':img_autor,
                             'link_autor':link_autor,
@@ -57,52 +55,37 @@ class CommentScraper {
                             'comentario': textComment,
                             'link_video' : link_video
                         };
-                        
-                        comentarios.push(comentario);
+                        return comentario
+                    }
+
+                    // itero en el contenedor que contiene el comentario
+                    for (let k = 0; k < contentLength; k++) {
+                        const contentElement = content.children[k];
+                        comentarios.push(obtenerInformacionComentario(contentElement));
                         // obtengo el contendor que contine las respuestas de los comentarios
                         const replies = contentElement.querySelectorAll("#replies #contents")
                         // pregunto si el comenterio tiene respuestas
                         if (replies.length > 0){
                             for(let l = 0; l < replies.length; l++){
                                 const elemento = replies[l]
-                                const img_autor = elemento.querySelector('#author-thumbnail #img')?.src || 'vacio';
-                                const link_autor = elemento.querySelector('#header-author h3')?.childNodes[1]?.href || 'vacio';
-                                const autorComment = elemento.querySelector('#author-text')?.innerText || 'vacio';
-                                const textComment = elemento.querySelector('#content-text')?.innerText || 'vacio';
-                                const link_video = currentUrl
-
-                                let comentario = {
-                                    'img_autor':img_autor,
-                                    'link_autor':link_autor,
-                                    'autor': autorComment,
-                                    'comentario': textComment,
-                                    'link_video' : link_video
-                                };
-                                
-                                comentarios.push(comentario);
+                                comentarios.push(obtenerInformacionComentario(elemento));
                             }
                         }    
                     }
                     return comentarios;
                 });
+                
                 this.todosLosComentarios.push({ 'link-video': video, 'comentarios': comentarios });
-                // this.mostrarComentarios();
                 console.log('Se han analizado ' + this.todosLosComentarios.length + ' videos');
-
-        
-                // this.iniciarObservacion()
-
                 await new Promise(resolve => setTimeout(resolve, 1000));
+
             } catch (error)  {
                 console.log(`No se pudo encontrar el elemento #comments en el video ${video}. Continuando con el siguiente video.`);
             }
         }
         return this.todosLosComentarios
     }
-
-
-
-
+    
 
     async cerrarNavegador() {
         await this.page.close();
