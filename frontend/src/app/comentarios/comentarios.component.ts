@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { combineLatest } from 'rxjs';
 
 @Component({
   selector: 'app-comentarios',
@@ -19,7 +20,7 @@ export class ComentariosComponent {
   text_loading!:string
   url_api_consumer = 'http://127.0.0.1:8000/analizar-comentarios/'
   pagination = false
-
+  numTotalComentarios:any = 0
   itemsPerPage = 15; // Número de comentarios por página
   currentPage = 1; // Página actual
 
@@ -47,12 +48,14 @@ export class ComentariosComponent {
     let numTotalPages =  Math.ceil(this.comments.length / this.itemsPerPage);
     return numTotalPages
   }
-
+  
   analizarComentarios() {
     const videoUrls = this.commentForm.get('videoUrls')?.value.split(',');
     this.num_videos_cargados = videoUrls.length
     this.comments = [];  // Limpiar el array de comentarios
     this.num_videos_procesados=0
+   
+    
 
     // Funcion recursiva para realizar las peticiones una por una
     const realizarPeticion = (index: number) => {
@@ -68,6 +71,7 @@ export class ComentariosComponent {
               if (data){
                 data.forEach((comentario: any) => {
                   this.comments.unshift(comentario);
+                  
                 });
                 // Llamo recursivamente para la siguiente URL
                 realizarPeticion(index + 1);
@@ -78,6 +82,7 @@ export class ComentariosComponent {
                 // Llamo recursivamente para la siguiente URL
                 realizarPeticion(index + 1);
               }
+              this.numTotalComentarios = this.comments.length
 
           },
           (error) => {
@@ -102,6 +107,7 @@ export class ComentariosComponent {
     }
     // Inicio la secuencia de peticiones
     realizarPeticion(0);
+    console.log(this.comments)
     
   }
   
