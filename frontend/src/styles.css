@@ -5,3 +5,10 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+:root {
+    /* variables */
+    --first-color: #0053c0;
+    --first-color-alt: #1367d4;
+    --text-color: hsl(231, 12%, 98%);
+  }
