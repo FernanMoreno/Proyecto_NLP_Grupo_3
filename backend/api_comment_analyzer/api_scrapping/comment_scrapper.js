@@ -42,7 +42,6 @@ class CommentScraper {
                 const comentarios = await this.page.evaluate(async () => {
                     const comentarios = [];
                     const content = document.querySelector('#comments #contents');
-                    console.log(content)
                     const contentLength = content.children.length;
                     const currentUrl = window.location.href;
                     // esta funcion recibe el contenedor de los comemarios y obtiene el comentario, el nombre del usuario, su foto de perfil.
@@ -80,7 +79,7 @@ class CommentScraper {
                     return comentarios;
                 });
                 
-                this.todosLosComentarios.push({ 'link-video': video, 'comentarios': comentarios });
+                this.todosLosComentarios.push({ 'link-video': video, 'comentario_data': comentarios });
                 console.log('Se han analizado ' + this.todosLosComentarios.length + ' videos');
                 await new Promise(resolve => setTimeout(resolve, 1000));
 

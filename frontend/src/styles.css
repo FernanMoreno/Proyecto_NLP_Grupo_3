@@ -12,3 +12,7 @@
     --first-color-alt: #1367d4;
     --text-color: hsl(231, 12%, 98%);
   }
+
+body{
+  overflow-y: scroll;
+}

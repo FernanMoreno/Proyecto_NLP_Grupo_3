@@ -18,7 +18,15 @@ uvicorn main:app --host 0.0.0.0 --port 8000 &
 # Espera un momento para que el servidor FastAPI se inicie (ajusta según sea necesario)
 sleep 2
 
+cd ..
+
+cd database
+ 
+node main.js  &
+
 cd ../../
+
+sleep 2
 
 # Cambia al directorio de Angular (debes ajustar la ruta)
 cd frontend

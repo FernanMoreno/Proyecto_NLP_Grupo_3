@@ -1,0 +1,28 @@
+<app-nav></app-nav>
+
+  <div id="results">
+    <button class="btn-volver" (click)="goBack()">Volver</button>
+    <div *ngFor="let comment of comentarios" class="comentario-contenedor-principal">
+      <!-- <button id="btn-delete" title="Borrar video de youtube">
+        <img class="img" src="../../assets/borrar.png" alt="">
+      </button> -->
+      <a target="_blank" [href]="comment.link_autor" class="contenedor-img-autor">
+        <img class="img-autor" [src]="comment.foto_usuario" alt="">
+      </a>
+
+      <div class="comentario">
+        <div class="header">
+          <p title="nombre del usuario" id="user_name"><a target="_blank" [href]="comment.link_autor">{{ comment.autor }}</a></p>
+          <p id="time">Hace 2 minutos</p>
+        </div>
+        <div class="contenedor-comentario">
+          <p>{{ comment.comentario }}</p>
+        </div>
+        <div class="footer">
+          <p id="sentimiento"><strong>Sentimiento:</strong> {{ comment.sentimiento }}</p>
+          <p title="ir al video en youtube" id="video-redirect"><strong>video:</strong><a target="_blank" [href]="comment.link_video">Ir al video</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>

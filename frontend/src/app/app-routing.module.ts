@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ComentariosComponent } from './comentarios/comentarios.component';
 import { BusquedaPorTemaComponent } from './busqueda-por-tema/busqueda-por-tema.component';
+import { HistorialComponent } from './historial/historial.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'con-enlaces', component: ComentariosComponent },
   { path: 'por-tema', component: BusquedaPorTemaComponent },
+  { path: 'historial', component: HistorialComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 @NgModule({

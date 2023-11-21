@@ -20,11 +20,23 @@
 .contenedor-pagination{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     position: sticky;
     top: 
     50px;
     z-index: 1000;
+    gap: 15px;
+
+}
+
+.btn-filtro{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(43, 43, 43, 0.3) 0px 1px 3px -1px;
+    background-color: rgba(255, 255, 255, 0.947);
+    border-radius: 30px;
+    border: none;
+    padding: 0 10px;
+    font-weight: 500;
+    color: #656565;
 }
 
 .pagination{

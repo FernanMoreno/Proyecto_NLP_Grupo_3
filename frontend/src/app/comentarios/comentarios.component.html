@@ -4,7 +4,7 @@
     <form (ngSubmit)="analizarComentarios()" [formGroup]="commentForm">
       <label id="label-urls" for="videoUrls">URLs de Videos (separadas por comas)</label>
       <textarea type="texta" id="videoUrls" name="videoUrls" formControlName="videoUrls" required></textarea>
-      
+
       <button class="button__loader" [class.animacion]="escrapeando === true">
         <span class="button__text">
           {{escrapeando == true ? 'Escrapeando video' : 'Escrapear'}}
@@ -16,14 +16,14 @@
         <p>{{numTotalComentarios}} comentarios analizados</p>
       </div>
     </form>
-    
+
     
   </section>
   
   
+  
 
   <section class="seccion-lista-comentarios">
-
     <div *ngIf="getTotalPages() > 0" class="contenedor-pagination" >
       
       <div class="pagination">
@@ -31,10 +31,12 @@
         <span>Página {{ currentPage }}  de {{ getTotalPages() }}</span>
         <button (click)="nextPage()" [disabled]="currentPage * itemsPerPage >= comments.length"><img src="../../assets/flecha-derecha.png" alt=""></button>
       </div>
+
+      <button class="btn-filtro" (click)="intercambiarVistaComentarios()">{{mostrarSoloComentariosNegativos == true ? 'Mostrar todos': 'Mostrar solo negativos'}}</button>
     </div>
 
     <div id="results">
-      <div *ngFor="let comment of comments.slice((currentPage-1)*itemsPerPage, currentPage*itemsPerPage)" class="comentario-contenedor-principal">
+      <div  *ngFor="let comment of comentarios.slice((currentPage-1)*itemsPerPage, currentPage*itemsPerPage)" class="comentario-contenedor-principal">
         <button id="btn-delete" title="Borrar video de youtube">
           <img class="img" src="../../assets/borrar.png" alt="">
         </button>

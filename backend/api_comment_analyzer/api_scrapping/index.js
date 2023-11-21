@@ -20,7 +20,7 @@ app.post('/api/scrap-comments', async (req, res) => {
     await page.goto('https://www.youtube.com');
     const commentScraper = new CommentScraper(page);
     const comentarios_data = await commentScraper.recopilarComentarios(urls);
-    // await browser.close();
+    await browser.close();
     res.json(comentarios_data);
 });
 
