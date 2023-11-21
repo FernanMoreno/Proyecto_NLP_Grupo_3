@@ -1,4 +1,4 @@
-s<br>
+<br>
 <br>
 <br>
 <img src="https://raw.githubusercontent.com/AI-School-F5-P2/Proyecto_NLP_Grupo_3/develop/frontend/src/assets/logo.png" alt="Texto alternativo" width="400" m>
@@ -11,12 +11,16 @@ s<br>
 
 YouTube enfrenta un desafío significativo con la proliferación de mensajes de odio en los comentarios de sus videos. El equipo de moderadores actual no puede mantenerse al día con la creciente cantidad de contenido negativo. La opción de expandir el equipo resulta costosa e ineficiente frente al rápido crecimiento de la plataforma y la creciente concurrencia de mensajes ofensivos.
 
-Ante esta situación, YouTube ha decidido subcontratar a nuestra consultora para desarrollar una solución automatizada que permita detectar mensajes de odio. La solución debe posibilitar la eliminación rápida de contenido inapropiado y la aplicación de medidas, como la prohibición de usuarios cuando sea necesario.
+Ante esta situación, YouTube ha decidido subcontratar a nuestra consultora para desarrollar una solución automatizada que permita detectar mensajes de odio. La solución debe posibilitar la eliminación rápida de contenido inapropiado y la aplicación de medidas, como la prohibición de usuarios cuando sea necesario.  
+
+## Documentación:  
+https://www.notion.so/Hate-Scan-e226202a521e4109bc1a8785cf9e7563?pvs=4
+
 
 <br>
 <br>
 
-## INSTALACION
+## INSTALACIÓN
 
  **Clonar el Repositorio:**
 
