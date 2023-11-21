@@ -10,10 +10,12 @@ import { combineLatest } from 'rxjs';
   styleUrls: ['./comentarios.component.css'],
   
 })
-export class ComentariosComponent {
+export class ComentariosComponent implements OnInit {
 
   commentForm: FormGroup;
   comments: any[] = [];
+  commentsNegativos: any[] = [];
+  comentarios:any[] = [];
   num_videos_procesados = 0
   num_videos_cargados = 0
   link_video_en_proceso: SafeResourceUrl | undefined;
@@ -24,11 +26,27 @@ export class ComentariosComponent {
   itemsPerPage = 15; // Número de comentarios por página
   currentPage = 1; // Página actual
   escrapeando = false
+  mostrarSoloComentariosNegativos = false
+  text = 'Mostrar todos'
 
   constructor(private http: HttpClient, private sanitizer: DomSanitizer) {
     this.commentForm = new FormGroup({
       videoUrls: new FormControl('', Validators.required)
     });
+  }
+
+  ngOnInit(): void {
+    this.intercambiarVistaComentarios()
+  }
+  
+
+  public intercambiarVistaComentarios():void{
+    this.mostrarSoloComentariosNegativos = !this.mostrarSoloComentariosNegativos
+    if(this.mostrarSoloComentariosNegativos == true){
+      this.comentarios = this.commentsNegativos
+    } else{
+      this.comentarios = this.comments
+    }
   }
 
 
@@ -73,7 +91,10 @@ export class ComentariosComponent {
               if (data){
                 data.forEach((comentario: any) => {
                   this.comments.unshift(comentario);
-                  
+                  if(comentario['sentimiento'] == 'Negativo'){
+                    this.commentsNegativos.unshift(comentario);
+                    this.intercambiarVistaComentarios()
+                  }     
                 });
                 // Llamo recursivamente para la siguiente URL
                 realizarPeticion(index + 1);
@@ -110,7 +131,6 @@ export class ComentariosComponent {
     }
     // Inicio la secuencia de peticiones
     realizarPeticion(0);
-    console.log(this.comments)
     
   }
   

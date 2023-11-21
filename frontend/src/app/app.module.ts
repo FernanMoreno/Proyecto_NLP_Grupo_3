@@ -13,6 +13,7 @@ import { ComentariosComponent } from './comentarios/comentarios.component';
 import { HomeComponent } from './home/home.component';
 import { BusquedaPorTemaComponent } from './busqueda-por-tema/busqueda-por-tema.component';
 import { NavComponent } from './nav/nav.component';
+import { HistorialComponent } from './historial/historial.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { NavComponent } from './nav/nav.component';
     ComentariosComponent,
     HomeComponent,
     BusquedaPorTemaComponent,
-    NavComponent
+    NavComponent,
+    HistorialComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, CommonModule, ReactiveFormsModule], 
   providers: [],

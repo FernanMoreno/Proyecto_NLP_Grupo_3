@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from consume_scrapping import API_scrapping_class
 from modelo_analyzer.analizer import ModeloClass
+from consume_database import Database
 
 # Crea una instancia de FastAPI
 app = FastAPI()
@@ -36,6 +37,11 @@ def analizar_comentarios(video_data: VideoUrls):
     modelo = ModeloClass()
     # Analizar los comentarios y devolverlos
     comentarios_con_sentimiento = modelo.analizar_comentarios(comentario_data)
+
+    Database().insert(comentarios_con_sentimiento)
+
+    # print(comentarios_con_sentimiento)
+
     return comentarios_con_sentimiento
 
 
