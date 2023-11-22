@@ -22,7 +22,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
+    position: sticky;
+    top: 50px;
     z-index: 1000;
     gap: 15px;
 

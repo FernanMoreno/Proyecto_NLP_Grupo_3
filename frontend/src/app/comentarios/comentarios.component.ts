@@ -69,9 +69,9 @@ export class ComentariosComponent implements OnInit {
     return numTotalPages
   }
 
-  generarRegistros(){
+  // generarRegistros(){
 
-  }
+  // }
   
   analizarComentarios() {
     const videoUrls = this.commentForm.get('videoUrls')?.value.split(',');
