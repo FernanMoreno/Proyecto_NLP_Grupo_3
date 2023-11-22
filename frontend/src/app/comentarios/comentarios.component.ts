@@ -28,6 +28,7 @@ export class ComentariosComponent implements OnInit {
   escrapeando = false
   mostrarSoloComentariosNegativos = false
   text = 'Mostrar todos'
+  registros:any[] = []
 
   constructor(private http: HttpClient, private sanitizer: DomSanitizer) {
     this.commentForm = new FormGroup({
@@ -67,6 +68,10 @@ export class ComentariosComponent implements OnInit {
     let numTotalPages =  Math.ceil(this.comments.length / this.itemsPerPage);
     return numTotalPages
   }
+
+  generarRegistros(){
+
+  }
   
   analizarComentarios() {
     const videoUrls = this.commentForm.get('videoUrls')?.value.split(',');
@@ -74,6 +79,7 @@ export class ComentariosComponent implements OnInit {
     this.comments = [];  // Limpiar el array de comentarios
     this.num_videos_procesados=0
     this.numTotalComentarios = 0
+    
    
     
 
@@ -96,6 +102,11 @@ export class ComentariosComponent implements OnInit {
                     this.intercambiarVistaComentarios()
                   }     
                 });
+
+                const registro = {'url_video':url, 'analizados':data.length, 'negativos':this.commentsNegativos.length}
+                console.log(registro)
+                this.registros.push(registro)
+               
                 // Llamo recursivamente para la siguiente URL
                 realizarPeticion(index + 1);
 
@@ -106,11 +117,11 @@ export class ComentariosComponent implements OnInit {
                 realizarPeticion(index + 1);
               }
               this.numTotalComentarios = this.comments.length
-              this.escrapeando = false
+              // this.escrapeando = false
               console.log(this.numTotalComentarios, ' Comentarios analizados')
           },
           (error) => {
-            this.escrapeando = false
+            // this.escrapeando = false
             if (error.status === 404) {
               // Manejar el caso específico de URL no encontrada
               this.comments.push({ error: `La URL ${url} no existe o no está disponible.` });
@@ -127,6 +138,7 @@ export class ComentariosComponent implements OnInit {
           
         } else{
           this.text_loading = 'Se han escrapeado'
+          this.escrapeando = false
         }   
     }
     // Inicio la secuencia de peticiones

@@ -7,15 +7,35 @@
 
       <button class="button__loader" [class.animacion]="escrapeando === true">
         <span class="button__text">
-          {{escrapeando == true ? 'Escrapeando video' : 'Escrapear'}}
+          {{ num_videos_cargados ==  0 ? 'Escrapear' : (text_loading + ' ' + num_videos_procesados + ' / ' + num_videos_cargados) }}
         </span>
       </button>
 
       <div class="seccion-formulario-footer">
-        <p class="contador">{{text_loading}} {{ num_videos_procesados }} / {{ num_videos_cargados}} </p>
+        <!-- <p class="contador"></p> -->
         <p>{{numTotalComentarios}} comentarios analizados</p>
       </div>
     </form>
+
+  
+    
+  <table *ngIf="getTotalPages() > 0">
+    <thead>
+      <tr>
+        <th>Video</th>
+        <th>Comentarios Analizados</th>
+        <th>Comentarios Negativos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Recorre los registros y muestra cada uno en una fila de la tabla -->
+      <tr *ngFor="let registro of registros">
+        <td>{{ registro.url_video }}</td>
+        <td>{{ registro.analizados }}</td>
+        <td>{{ registro.negativos }}</td>
+      </tr>
+    </tbody>
+  </table>
 
     
   </section>
@@ -62,6 +82,8 @@
     </div>
   
   </section>
+
+  
 
 
 

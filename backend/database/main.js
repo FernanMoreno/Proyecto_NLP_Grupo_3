@@ -65,8 +65,6 @@ connection.connect((err) => {
     const valoresInsercion = comentarios.map(comentario => {
       return [ comentario.comentario, comentario.nombre_usuario, comentario.foto_usuario, comentario.link_usuario, comentario.url_video, comentario.sentimiento];
     });
-
-    console.log(valoresInsercion)
   
     // Ejecutar la consulta de inserción
     connection.query(consultaInsercion, [tablaComentarios, valoresInsercion], (error, resultados, campos) => {
