@@ -13,6 +13,7 @@ class ClasificadorTexto:
         self.model = DistilBertForSequenceClassification.from_pretrained(self.model_directory)
         self.tokenizer = DistilBertTokenizer.from_pretrained(self.model_directory)
 
+        
 
     def predecir(self, texto):
         # Tokenizar el texto
