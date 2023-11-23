@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from asyncio import exceptions
 import os
 import pickle
@@ -8,17 +8,10 @@ import torch
 from transformers import DistilBertForSequenceClassification, DistilBertTokenizer
 from modelo_analyzer.consume_modelo import ClasificadorTexto
 # from modelo_analyzer.a import predecir
-=======
-import pickle
-import re
-from googletrans import Translator
-from modelo_analyzer.modelo import Modelo_analyzer_class
->>>>>>> dad841917168f1cb9fa502b8e511c4ded2c46e64
 
 class ModeloClass:
     def __init__(self):
         # instancio el modelo 
-<<<<<<< HEAD
         self.modelo = ClasificadorTexto()
     
 
@@ -60,14 +53,14 @@ class ModeloClass:
 
         # Analizar el sentimiento del comentario
         prediccion = self.modelo.predecir(comentario)
-    
+  
         # obtengo la respuesta de la prediccion en 0 y 1
         if prediccion == '0':
             prediccion = "Positivo"
         else:
-=======
-        self.modelo = Modelo_analyzer_class()
+            prediccion = "Negativo"
         
+        return prediccion
     # tradusco todo a ingles
 
     def traductor(self, comentario):
@@ -117,22 +110,7 @@ class ModeloClass:
        
         # return comments_list
 
-    def predictor(self, comentario):
-        # Analizar el sentimiento del comentario
-        prediccion = self.modelo.analyzer(comentario)
-        # obtengo la respuesta de la prediccion en 0 y 1
-        if prediccion == 0:
-            prediccion = "Positivo"
-        elif prediccion == 1:
->>>>>>> dad841917168f1cb9fa502b8e511c4ded2c46e64
-            prediccion = "Negativo"
-        return prediccion
-
     def analizar_comentarios(self, comentarios_data):
-<<<<<<< HEAD
-
-=======
->>>>>>> dad841917168f1cb9fa502b8e511c4ded2c46e64
         if comentarios_data:
             comentarios = comentarios_data
             # Lista para almacenar comentarios y sus análisis de sentimiento
@@ -147,12 +125,9 @@ class ModeloClass:
                     img_autor = comentario['img_autor']
                     link_autor = comentario['link_autor']
                     autor = comentario["autor"]
-<<<<<<< HEAD
                     comentario_texto = comentario["comentario"]
                     # comentario_texto = self.traductor(comentario["comentario"])
-=======
                     comentario_texto = self.traductor(comentario["comentario"])
->>>>>>> dad841917168f1cb9fa502b8e511c4ded2c46e64
                     link_video = comentario['link_video']
                     # Crear un diccionario que almacena el comentario y su análisis de sentimiento
                     comentario_con_sentimiento = {

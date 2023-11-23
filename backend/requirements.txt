@@ -1,0 +1,7 @@
+python-decouple
+fastapi
+googletrans
+dotenv
+transformers
+torch
+huggingface-cli
